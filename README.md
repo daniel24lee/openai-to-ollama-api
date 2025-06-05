@@ -13,6 +13,9 @@ npm install
 npm run start
 ```
 
+### Guides
+Check out the [Wiki](https://github.com/XInTheDark/openai-to-ollama-api/wiki) for guides.
+
 ## Configuration
 ### JSON config
 The main configuration file is `config/providers.json`. It defines the OpenAI API endpoints you want to use. Each provider can have its own settings.
