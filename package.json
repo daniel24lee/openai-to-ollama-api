@@ -1,5 +1,5 @@
 {
-  "name": "server-g4f",
+  "name": "openai-to-ollama-api",
   "version": "1.0.0",
   "type": "module",
   "main": "src/main.js",
@@ -10,6 +10,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.2",
+    "morgan": "^1.10.0",
     "node-fetch": "^3.3.2",
     "openai": "^4.102.0"
   },
@@ -17,8 +18,5 @@
     "start": "node src/main.js",
     "dev": "NODE_ENV=development node src/main.js",
     "fix-lint": "npx prettier .. --write --list-different"
-  },
-  "devDependencies": {
-    "morgan": "^1.10.0"
   }
 }
