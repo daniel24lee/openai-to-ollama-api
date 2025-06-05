@@ -14,7 +14,7 @@ npm run start
 ```
 
 ### Guides
-Check out the [Wiki](https://github.com/XInTheDark/openai-to-ollama-api/wiki) for guides.
+Check out the [Wiki](https://github.com/XInTheDark/openai-to-ollama-api/wiki) for quickstarts.
 
 ## Configuration
 ### JSON config
