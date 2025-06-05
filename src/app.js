@@ -24,7 +24,7 @@ const endpoint = (method, path, middleware, handler) => {
 };
 
 // Root
-const root_message = "raycast-custom-apis running <br> https://github.com/XInTheDark/raycast-custom-apis";
+const root_message = "Server running <br> https://github.com/XInTheDark/openai-to-ollama-api";
 endpoint("get", "/", middleware_null, (req, res) => {
   res.send(root_message);
 });
