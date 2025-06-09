@@ -32,7 +32,7 @@ export function v1_models_endpoint(req, res) {
 
 // POST /api/show
 export function v1_show_endpoint(req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     const model = req.body.model;
     if (!model || !providers_info[model]) {
         return res.status(400).json({ error: "Model not found" });
