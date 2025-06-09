@@ -2,6 +2,7 @@
   "providers":
     {
       "openai": {
+        "type": "openai",
         "baseURL": "https://api.openai.com/v1",
         "apiKey": "OPENAI_API_KEY",
         "models": [

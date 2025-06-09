@@ -10,6 +10,7 @@ import morgan from "morgan";
 
 // Init
 import { initProviders } from "#root/src/api/init.js";
+
 await initProviders();
 
 const app = express.Router();
@@ -19,14 +20,14 @@ app.use(morgan("dev")); // Logging middleware
 
 // Register endpoint
 const endpoint = (method, path, middleware, handler) => {
-  path = (process.env.ENDPOINT_PREFIX || "") + path;
-  app[method](path, middleware, handler);
+    path = (process.env.ENDPOINT_PREFIX || "") + path;
+    app[method](path, middleware, handler);
 };
 
 // Root
 const root_message = "Server running <br> https://github.com/XInTheDark/openai-to-ollama-api";
 endpoint("get", "/", middleware_null, (req, res) => {
-  res.send(root_message);
+    res.send(root_message);
 });
 
 // models endpoint
